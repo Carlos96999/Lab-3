@@ -10,7 +10,7 @@ public class RegistryTest
     @Test
     public void validateRegistryResult() 
 	{
-        Person person = new Person();
+        Person person = new Person("Carlos", 1, 24, Gender.MALE, true);
 
         RegisterResult result = registry.registerVoter(person);
 
@@ -20,8 +20,7 @@ public class RegistryTest
 	@Test
 	public void validateAlive()
 	{
-		Person person = new Person();
-		person.setAlive(false);
+		Person person = new Person("Carlos", 12, 24, Gender.MALE, false);
         RegisterResult result = registry.registerVoter(person);
         Assert.assertEquals(RegisterResult.DEAD, result);
 	}
@@ -29,8 +28,7 @@ public class RegistryTest
 	@Test
 	public void validateAge()
 	{
-		Person person = new Person();
-		person.setAge(200);
+		Person person = new Person("Carlos", 123, 240, Gender.MALE, true);
         RegisterResult result = registry.registerVoter(person);
         Assert.assertEquals(RegisterResult.INVALID_AGE, result);
 	}
@@ -38,9 +36,9 @@ public class RegistryTest
 	@Test
 	public void validateDuplicated()
 	{
-		Person person = new Person();
+		Person person = new Person("Carlos", 1234, 24, Gender.MALE, true);
         RegisterResult result1 = registry.registerVoter(person);
-		Person person2 = new Person();
+		Person person2 = new Person("Andres", 1234, 24, Gender.MALE, true);
         RegisterResult result2 = registry.registerVoter(person2);
         Assert.assertEquals(RegisterResult.DUPLICATED, result2);	
 	}
@@ -48,8 +46,7 @@ public class RegistryTest
 	@Test
 	public void validateUnderage()
 	{
-		Person person = new Person();
-		person.setAge(17);
+		Person person = new Person("Carlos", 123456, 17, Gender.MALE, true);
         RegisterResult result = registry.registerVoter(person);
         Assert.assertEquals(RegisterResult.UNDERAGE, result);
 	}	

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.eci.cvds.tdd.registry.RegistryTest" time="0.167" tests="5" errors="0" skipped="0" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.eci.cvds.tdd.registry.RegistryTest" time="0" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -19,7 +19,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Carlos\AppData\Local\Temp\surefire3389910802099448451\surefirebooter1913430304112586903.jar C:\Users\Carlos\AppData\Local\Temp\surefire3389910802099448451 2020-08-20T10-00-50_725-jvmRun1 surefire5322489054525287299tmp surefire_04313863394880793626tmp"/>
+    <property name="sun.java.command" value="C:\Users\Carlos\AppData\Local\Temp\surefire92938289067077311\surefirebooter565204489766765538.jar C:\Users\Carlos\AppData\Local\Temp\surefire92938289067077311 2020-08-20T10-37-44_722-jvmRun1 surefire7048038388647485826tmp surefire_04895727521011082280tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\Carlos\Desktop\ECI\Octavo\CVDS\Laboratorios\CVDS\Laboratorios\Lab 3\ClasesEquivalencia\target\test-classes;C:\Users\Carlos\Desktop\ECI\Octavo\CVDS\Laboratorios\CVDS\Laboratorios\Lab 3\ClasesEquivalencia\target\classes;C:\Users\Carlos\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Carlos\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Carlos\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0-RC1\junit-jupiter-api-5.7.0-RC1.jar;C:\Users\Carlos\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Carlos\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Carlos\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0-RC1\junit-platform-commons-1.7.0-RC1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Carlos"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Carlos\AppData\Local\Temp\surefire3389910802099448451\surefirebooter1913430304112586903.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Carlos\AppData\Local\Temp\surefire92938289067077311\surefirebooter565204489766765538.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_231\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -62,25 +62,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="validateUnderage" classname="edu.eci.cvds.tdd.registry.RegistryTest" time="0.007">
-    <failure message="expected:&lt;UNDERAGE&gt; but was:&lt;DEAD&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<UNDERAGE> but was:<DEAD>
-	at edu.eci.cvds.tdd.registry.RegistryTest.validateUnderage(RegistryTest.java:54)
-]]></failure>
-  </testcase>
-  <testcase name="validateAge" classname="edu.eci.cvds.tdd.registry.RegistryTest" time="0">
-    <failure message="expected:&lt;INVALID_AGE&gt; but was:&lt;DEAD&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<INVALID_AGE> but was:<DEAD>
-	at edu.eci.cvds.tdd.registry.RegistryTest.validateAge(RegistryTest.java:35)
-]]></failure>
-  </testcase>
+  <testcase name="validateUnderage" classname="edu.eci.cvds.tdd.registry.RegistryTest" time="0"/>
+  <testcase name="validateAge" classname="edu.eci.cvds.tdd.registry.RegistryTest" time="0"/>
   <testcase name="validateAlive" classname="edu.eci.cvds.tdd.registry.RegistryTest" time="0"/>
-  <testcase name="validateDuplicated" classname="edu.eci.cvds.tdd.registry.RegistryTest" time="0">
-    <failure message="expected:&lt;DUPLICATED&gt; but was:&lt;DEAD&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<DUPLICATED> but was:<DEAD>
-	at edu.eci.cvds.tdd.registry.RegistryTest.validateDuplicated(RegistryTest.java:45)
-]]></failure>
-  </testcase>
-  <testcase name="validateRegistryResult" classname="edu.eci.cvds.tdd.registry.RegistryTest" time="0">
-    <failure message="expected:&lt;VALID&gt; but was:&lt;DEAD&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<VALID> but was:<DEAD>
-	at edu.eci.cvds.tdd.registry.RegistryTest.validateRegistryResult(RegistryTest.java:17)
-]]></failure>
-  </testcase>
+  <testcase name="validateDuplicated" classname="edu.eci.cvds.tdd.registry.RegistryTest" time="0"/>
+  <testcase name="validateRegistryResult" classname="edu.eci.cvds.tdd.registry.RegistryTest" time="0"/>
 </testsuite>

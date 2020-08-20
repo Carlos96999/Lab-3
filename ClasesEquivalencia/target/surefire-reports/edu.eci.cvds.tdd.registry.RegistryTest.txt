@@ -1,20 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: edu.eci.cvds.tdd.registry.RegistryTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.167 s <<< FAILURE! - in edu.eci.cvds.tdd.registry.RegistryTest
-validateUnderage(edu.eci.cvds.tdd.registry.RegistryTest)  Time elapsed: 0.007 s  <<< FAILURE!
-java.lang.AssertionError: expected:<UNDERAGE> but was:<DEAD>
-	at edu.eci.cvds.tdd.registry.RegistryTest.validateUnderage(RegistryTest.java:54)
-
-validateAge(edu.eci.cvds.tdd.registry.RegistryTest)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.AssertionError: expected:<INVALID_AGE> but was:<DEAD>
-	at edu.eci.cvds.tdd.registry.RegistryTest.validateAge(RegistryTest.java:35)
-
-validateDuplicated(edu.eci.cvds.tdd.registry.RegistryTest)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.AssertionError: expected:<DUPLICATED> but was:<DEAD>
-	at edu.eci.cvds.tdd.registry.RegistryTest.validateDuplicated(RegistryTest.java:45)
-
-validateRegistryResult(edu.eci.cvds.tdd.registry.RegistryTest)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.AssertionError: expected:<VALID> but was:<DEAD>
-	at edu.eci.cvds.tdd.registry.RegistryTest.validateRegistryResult(RegistryTest.java:17)
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in edu.eci.cvds.tdd.registry.RegistryTest

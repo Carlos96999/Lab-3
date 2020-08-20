@@ -1,14 +1,28 @@
 package edu.eci.cvds.tdd.registry;
-import java.util.HashMap;
+import java.util.ArrayList;
 
 public class Registry 
 {
-	private HashMap<Integer, String> idPerson = new HashMap<Integer, String>();
+	private ArrayList<Integer> idPerson = new ArrayList<Integer>();
+	
+	private boolean duplicate(int id)
+	{
+		boolean result = false;
+		int count = 0;
+		
+		for(int i = 0; i < idPerson.size(); i++)
+		{
+			if(id == idPerson.get(i)){ count += 1;}
+		}
+		if(count >= 2){ result = true;}
+		return result;
+	}
 	
 	public RegisterResult registerVoter(Person p)
 	{
 		RegisterResult result = null;
-        // TODO Validate person and return real result.
+        idPerson.add(p.getId());
+		
 		if(!p.isAlive())
 		{
 			result = RegisterResult.DEAD;
@@ -21,13 +35,9 @@ public class Registry
 		{
 			result = RegisterResult.INVALID_AGE;
 		}
-		else if(idPerson.containsKey(p.getId()))
+		else if(duplicate(p.getId()))
 		{
 			result = RegisterResult.DUPLICATED;
-		}
-		else if(!idPerson.containsKey(p.getId()))
-		{
-			idPerson.put(p.getId(), p.getName());
 		}
 		else
 		{
