@@ -2,14 +2,16 @@ package edu.eci.cvds.tdd.registry;
 
 import org.junit.Assert;
 import org.junit.Test;
+import edu.eci.cvds.tdd.aerodescuentos.*;
 
 public class RegistryTest 
 {
     private Registry registry = new Registry();
-
+    
     @Test
     public void validateRegistryResult() 
 	{
+    	
         Person person = new Person("Carlos", 1, 24, Gender.MALE, true);
 
         RegisterResult result = registry.registerVoter(person);

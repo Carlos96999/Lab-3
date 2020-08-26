@@ -10,6 +10,7 @@ public class Registry
 		boolean result = false;
 		int count = 0;
 		
+		
 		for(int i = 0; i < idPerson.size(); i++)
 		{
 			if(id == idPerson.get(i)){ count += 1;}
