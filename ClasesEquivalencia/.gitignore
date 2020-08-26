@@ -1,6 +1,2 @@
-*
-!.settings
-!.src
-!.gitignore
-!.pom
+/target
 
